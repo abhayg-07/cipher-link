@@ -1,0 +1,158 @@
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5b2c6f;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 4mm solid #4a90e2;
+    width: 100%;
+    position: relative;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.button-container a {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 30px;
+    background-color: #4a90e2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+.button-container a:hover {
+    background-color: #357db2;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer.dark-mode {
+    background-color: #111;
+}
+
+.encrypted-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    height: 200px;
+    width: 100%;
+    overflow-y: auto;
+    display: none;
+}
+
+.encrypted-box::before {
+    content: "Encrypted Text";
+    display: block;
+    font-weight: bold;
+    color: #888;
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.copy-button:hover {
+    text-decoration: underline;
+}
+
+main>section {
+    margin-bottom: 20px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form button {
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+main form button:hover {
+    background-color: #357db2;
+}
+
+#message {
+    border-radius: 8px;
+    resize: none;
+}
+
+#message::placeholder {
+    text-align: center;
+    line-height: inherit;
+    height: inherit;
+}
+
+.copy-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #04101e;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.copy-button:hover {
+    text-decoration: underline;
+}
